@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Mahasiswa</title>
+  <style>
+    html,    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    header {
+      text-align: center;
+    }
+    main {
+      width: 700px;
+      margin: 0 auto;
+    }
+    .row {
+      padding: 4px;
+    }
+    label {
+      display: inline-block;
+      width: 150px;
+    }
+    .form-control {
+      padding: 5px;
+      width: 500px;
+    }
+    .radio-group {
+      display: inline-flex;
+      gap: 10px;
+    }
+    textarea {
+      height: 100px;
+      resize: none;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Biodata Mahasiswa</h1>
+  </header>
+  <main>
+    <form action="validasi.php" method="post">
+      <div class="row">
+        <label for="input-nama">Nama</label>
+        <input class="form-control" type="text" id="input-nama" name="nama">
+      </div>
+      <div class="row">
+        <label for="input-nim">NIM</label>
+        <input class="form-control" type="text" id="input-nim" name="nim">
+      </div>
+      <div class="row">
+        <label for="input-lahir">Tanggal Lahir</label>
+        <input class="form-control" type="date" id="input-lahir" name="tanggal_lahir">
+      </div>
+      <div class="row">
+        <label for="input-jenis-kelamin">Gender</label>
+        <div class="form-control radio-group">
+          <input class="radio-button" type="radio" id="input-laki" name="jenis_kelamin" value="L">
+          <label for="input-laki">Laki-laki</label>
+          <input class="radio-button" type="radio" id="input-perempuan" name="jenis_kelamin" value="P">
+          <label for="input-perempuan">Perempuan</label>
+        </div>
+      </div>
+      <div class="row">
+        <label for="input-jurusan">Jurusan</label>
+        <select name="jurusan" id="input-jurusan">
+          <option disabled selected>Pilih Jurusan</option>
+          <option value="SK">Sistem Komputer</option>
+          <option value="SI">Sistem Informasi</option>
+          <option value="TI">Teknologi Informasi</option>
+          <option value="BD">Bisnis Digital</option>
+          <option value="MI">Manajemen Informatika</option>
+        </select>
+      </div>
+      <div class="row">
+        <label for="input-alamat">Alamat</label>
+        <textarea class="form-control" id="input-alamat" name="alamat"></textarea>
+      </div>
+      <div>
+        <button>Submit</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

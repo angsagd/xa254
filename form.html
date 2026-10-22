@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Login</title>
+  <style>
+    html,    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    header,
+    main {
+      text-align: center;
+    }
+    .row {
+      padding: 4px;
+    }
+    label {
+      display: inline-block;
+      width: 150px;
+    }
+    input {
+      padding: 5px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Login</h1>
+  </header>
+  <main>
+    <form action="validasi.php" method="post">
+      <div class="row">
+        <label for="input-username">Username</label>
+        <input type="text" id="input-username">
+      </div>
+      <div class="row">
+        <label for="input-password">Password</label>
+        <input type="password" id="input-password">
+      </div>
+      <div>
+        <button>Log in</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
