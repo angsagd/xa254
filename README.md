@@ -5,6 +5,7 @@ Repositori ini berisi file-file latihan untuk kelas CA254 dan VA254.
 Repositori ini bersifat sementara, aktif hanya satu semester.
 
 Daftar nama file latihan:
-- [form.html] (form.html)
-- [form1.html] (form1.html)
+
+- [form.html](form.html)
+- [form1.html](form1.html)
 
