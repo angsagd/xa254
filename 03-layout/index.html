@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Layout artikel dengan normal flow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="kepala"><div class="container"><h1>Jurnal Teknologi Kampus</h1><p>Catatan belajar pengembangan web</p></div></header>
+<nav class="container menu" aria-label="Navigasi utama"><a href="#artikel">Artikel</a><a href="#tentang">Tentang</a></nav>
+<main class="container">
+  <article id="artikel" class="artikel">
+    <span class="label">Materi kelas</span>
+    <h2>Mengapa struktur HTML penting?</h2>
+    <p>Struktur yang jelas membantu pembaca memahami isi halaman. CSS kemudian mengatur bagaimana bagian-bagian tersebut ditampilkan.</p>
+    <p>Normal flow menyusun paragraf mengikuti urutan dokumen. Tinggi artikel bertambah ketika isi bertambah.</p>
+    <span class="tag">HTML</span> <span class="tag">CSS</span>
+  </article>
+  <aside id="tentang" class="catatan"><h2>Tentang latihan</h2><p>Halaman ini memakai normal flow. Layout kolom akan dibahas pada Flexbox dan Grid.</p></aside>
+</main>
+<footer class="container"><p>Praktikum Pemrograman Web</p></footer>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Navigasi dan kartu dengan Flexbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="container bar-nav">
+  <a class="merek" href="#kelas">Kelas Web</a>
+  <nav aria-label="Navigasi kelas"><a href="#kelas">Kelas</a><a href="#kontak">Kontak</a></nav>
+</header>
+<main class="container" id="kelas">
+  <h1>Pilihan Praktikum</h1>
+  <section class="daftar" aria-label="Daftar praktikum">
+    <article class="kartu"><h2>HTML</h2><p>Struktur dan semantik halaman.</p><a href="#kontak">Informasi HTML</a></article>
+    <article class="kartu"><h2>CSS</h2><p>Selektor, box model, dan layout. Latihan ini memiliki deskripsi lebih panjang untuk menguji tinggi kartu.</p><a href="#kontak">Informasi CSS</a></article>
+    <article class="kartu"><h2>Layout</h2><p>Flexbox dan Grid untuk berbagai kebutuhan tata letak.</p><a href="#kontak">Informasi layout</a></article>
+  </section>
+  <section id="kontak"><h2>Kontak kelas</h2><p>Diskusikan pilihan praktikum dengan dosen pada sesi kelas.</p></section>
+</main>
+</body>
+</html>
