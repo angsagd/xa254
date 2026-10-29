@@ -1,0 +1,24 @@
+* , *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #17324d; background: #f1f5f9; line-height: 1.6; }
+a { color: #075985; }
+a:focus-visible { outline: 3px solid #b45309; outline-offset: 4px; }
+h1, h2, h3 { line-height: 1.25; }
+.container { width: min(100% - 2rem, 70rem); margin-inline: auto; }
+
+.container { padding-block: 2rem; }
+/* ID mengalahkan class pada konteks cascade contoh ini. */
+#judul-utama { color: #172554; }
+.judul { color: #be123c; }
+h1 { color: #15803d; }
+.kartu { background: white; padding: 1.5rem; border: 1px solid #94a3b8; }
+.kartu.unggulan { border: 3px solid #0284c7; }
+.kartu p { color: #475569; }
+.kartu > p { border-left: 4px solid #0284c7; padding-left: .75rem; }
+h1 + p { font-weight: bold; }
+h1 ~ p { background: #e0f2fe; padding: .5rem; }
+.daftar > li { padding: .4rem; }
+.daftar > li:nth-child(odd) { background: #e0f2fe; }
+input[type="email"] { display: block; width: 100%; max-width: 24rem; padding: .75rem; border: 2px solid #64748b; font: inherit; }
+input:focus-visible { outline: 3px solid #b45309; outline-offset: 3px; }
+a:hover { text-decoration-thickness: 3px; }
+.label::before { content: "★ "; color: #9a6700; }
